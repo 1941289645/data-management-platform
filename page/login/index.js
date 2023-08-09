@@ -15,11 +15,18 @@ document.querySelector('.btn').addEventListener('click',()=>{
     //1.3 基于 axios 调用验证码登录接口
     axios({
         url:'/v1_0/authorizations',
-        method:'POST',
+        method:'POST', 
         data
     }).then(res=>{
         myAlert(true,'登录成功')
         console.log(res);
+
+        //登录成功后，保存 token 令牌字符串到本地，并跳转到内容列表页面
+        localStorage.setItem('token',res.data.data.token)
+        setTimeout(()=>{
+            location.href='../content/index.html'
+        },1000)
+        
     }).catch(err=>{
         myAlert(false,err.response.data.message)
         console.dir(err.response.data.message);
