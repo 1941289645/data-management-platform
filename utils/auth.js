@@ -19,7 +19,7 @@ axios({
     url:'/v1_0/user/profile'
 }).then((result) => {
     console.log(result);
-    const username=result.data.data.name;
+    const username=result.data.name;
     document.querySelector('.nick-name').innerHTML=username;
 })
 
