@@ -3,6 +3,8 @@
 
 数据管理平台-演示：配套代码在本地运行
 
+网站演示：[黑马头条-数据管理平台 ](https://1941289645.github.io/data-management-platform/page/login/)
+
 移动网站-演示(发布的文章可在此查看)：[http://](http://geek.itheima.net/)[geek.itheima.net](http://geek.itheima.net/)[/](http://geek.itheima.net/)
 
 ## 功能：
